@@ -6,7 +6,7 @@ import pandas as pd
 class JobTrackerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Karam's Unemployment Prevention List (I'm so cooked)")
+        self.root.title("Your Unemployment Prevention Device (We are so cooked)")
         self.jobs = []
 
         self.create_menu()
@@ -188,7 +188,7 @@ class JobTrackerApp:
     def clear_application(self):
             selected = self.tree.focus()
             if selected:
-                messagebox.askyesno("Are we that cooked?", "Are you sure you want to delete this?")
+                messagebox.askyesno("Is it over?", "Are you sure you want to delete this?")
                 clear_jobs(int(selected))
                 self.refresh_jobs()
 
